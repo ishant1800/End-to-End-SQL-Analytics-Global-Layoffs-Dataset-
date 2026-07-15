@@ -1,22 +1,11 @@
-# Data Cleaning and Analysis
-Data Cleaning and Explanatory Data Analysis of provided data in SQL using Mysql Community Server. 
+This project demonstrates an end-to-end data engineering and analysis workflow using MySQL Community Server. The repository details the process of taking a raw, unformatted dataset regarding global company layoffs, executing strict data-cleaning protocols, and performing Exploratory Data Analysis (EDA) to isolate macroeconomic trends.
 
-#
+Key Steps Completed:
 
-# Dataset Used :-
-https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/layoffs.csv
+Data Cleaning & Stage Creation: Created staging tables to preserve raw data integrity, identified and removed duplicate records using window functions, and dropped irrelevant columns.
 
-# Project type :-
-Data Cleaning and Data Analysis
+Standardization & Parsing: Used SQL string functions like TRIM to fix spacing, resolved inconsistencies in industry naming conventions, and standardized date formats for time-series analysis.
 
-# Explanation :-
+Null Value Handling: Populated missing data fields by joining tables against matching entity records and cleared unusable blank rows.
 
-1. Removing Duplicates from the given data set.
-
-2. Standardizing the data.
-
-3. Removing extra spaces using trim.
-
-4. Removing null or blank values.
-
-5. Removing any column if necessary.
+Exploratory Data Analysis (EDA): Wrote advanced SQL queries to isolate which industries, locations, and funding stages suffered the highest layoffs, tracking patterns over time.
